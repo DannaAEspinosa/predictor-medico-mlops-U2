@@ -9,5 +9,7 @@ def predecir_estado(valores):
         return "ENFERMEDAD LEVE"
     elif suma <= 300:
         return "ENFERMEDAD AGUDA"
-    else:
+    elif suma <= 400:
         return "ENFERMEDAD CRÓNICA"
+    else:
+        return "ENFERMEDAD TERMINAL"
