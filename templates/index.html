@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción Médica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Predicción de Estado Médico</h2>
+        <p>Por favor, ingresa tres valores numéricos (síntomas o indicadores clínicos).</p>
+        
+        <form action="/predecir" method="POST">
+            <label for="valor1">Síntoma 1:</label>
+            <input type="number" name="valor1" id="valor1" min="0" max="100" step="any" placeholder="Ej: 25.5" required>
+
+            <label for="valor2">Síntoma 2:</label>
+            <input type="number" name="valor2" id="valor2" min="0" max="100" step="any" placeholder="Ej: 40.0" required>
+
+            <label for="valor3">Síntoma 3:</label>
+            <input type="number" name="valor3" id="valor3" min="0" max="100" step="any" placeholder="Ej: 30" required>
+
+            <button type="submit">Predecir</button>
+        </form>
+
+        {% if resultado is not none %}
+        <div class="result">
+            <p>Resultado de la predicción: <strong>{{ resultado }}</strong></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
