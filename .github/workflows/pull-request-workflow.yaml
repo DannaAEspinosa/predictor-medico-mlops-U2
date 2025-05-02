@@ -36,3 +36,11 @@ jobs:
         with:
           message: "CI/CD terminado con éxito."
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-approve Pull Request
+        if: success() && github.event_name == 'pull_request'
+        uses: peter-evans/approve-pull-request-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          review-type: APPROVE
+          body: "Auto-aprobado por CI/CD"
