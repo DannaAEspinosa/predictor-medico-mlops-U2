@@ -38,7 +38,7 @@ Accede a la aplicación en: [http://localhost:5000](http://localhost:5000)
 
 ### 3. Usar imagen desde GitHub Container Registry (GHCR)
 
-También puedes usar directamente la imagen publicada en GHCR:
+También se puede usar directamente la imagen publicada en GHCR:
 
 ```bash
 docker run -p 8000:5000 ghcr.io/dannaaespinosa/predictor-medico-mlops-u2:latest
@@ -124,7 +124,6 @@ predictor-medico/
 └── .github/
     └── workflows/ 
         └── deploy-on-main-workflow.yml  # Workflow de CI/CD con GitHub Actions
-```
         └── pull-request-workflow.yml     # Workflow de CI/CD con GitHub Actions
 ```    
 
