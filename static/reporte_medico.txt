@@ -1,0 +1,12 @@
+Reporte de Predicciones Médicas
+Fecha de la última predicción: 2025-05-02T02:13:06.027594
+
+Número total de predicciones por categoría:
+NO ENFERMO: 6
+
+Últimas 5 predicciones realizadas:
+2025-05-02T02:13:06.019408 - NO ENFERMO
+2025-05-02T02:13:06.021921 - NO ENFERMO
+2025-05-02T02:13:06.023304 - NO ENFERMO
+2025-05-02T02:13:06.025603 - NO ENFERMO
+2025-05-02T02:13:06.027594 - NO ENFERMO
